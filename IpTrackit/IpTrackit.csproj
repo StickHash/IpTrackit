@@ -74,10 +74,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\IpInfoDAOFact.cs" />
+    <Compile Include="DAL\IIpInfoDAO.cs" />
     <Compile Include="BLL\IipInfoManager.cs" />
     <Compile Include="BLL\IpInfoManagerFact.cs" />
     <Compile Include="BLL\IpInfoManagerImpl.cs" />
     <Compile Include="BO\IpInfo.cs" />
+    <Compile Include="DAL\IpInfoDAOImpl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -85,8 +88,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

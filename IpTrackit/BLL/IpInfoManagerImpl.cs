@@ -9,9 +9,19 @@ namespace IpTrackit.BLL
 {
     class IpInfoManagerImpl : IIpInfoManager
     {
+        IIpInfoDAO Dao = IpInfoDAOFact.GetInstance();
         public IpInfo GetIpInfo(string ip)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return Dao.GetByIp(ip);
+            }
+            catch (Exception)
+            {
+
+                throw new Exception();
+            } 
+
         }
     }
 }
