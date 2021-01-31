@@ -16,8 +16,9 @@ namespace IpTrackit
         static void Main(string[] args)
         {
             var IpInfoManager = IpInfoManagerFact.GetInstance();
-            Console.WriteLine("Hello");
-            var info = IpInfoManager.GetIpInfo("2.10.214.247");
+            Console.WriteLine("Recherche Info IP \n Entrez une adresse IP: ");
+            var ip = Console.ReadLine();
+            var info = IpInfoManager.GetIpInfo(ip);
             var city = info.City;
             var query = info.Query;
             Console.WriteLine("Ip: " + query);
