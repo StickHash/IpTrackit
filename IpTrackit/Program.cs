@@ -1,4 +1,5 @@
-﻿using IpTrackit.BO;
+﻿using IpTrackit.BLL;
+using IpTrackit.BO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,35 +15,15 @@ namespace IpTrackit
     {
         static void Main(string[] args)
         {
+            var IpInfoManager = IpInfoManagerFact.GetInstance();
             Console.WriteLine("Hello");
-
-            var infos = GetInfosAsync().Result;
-            Console.WriteLine(infos.Query);
-
+            var info = IpInfoManager.GetIpInfo("2.10.214.247");
+            var city = info.City;
+            var query = info.Query;
+            Console.WriteLine("Ip: " + query);
+            Console.WriteLine("Ville: " + city);
             Console.ReadKey();
         }
-
-        private static async Task<IpInfo> GetInfosAsync()
-        {
-            var infos = await httpClient.GetFromJsonAsync<IpInfo>("2.10.214.247");
-            
-
-            return infos;
-        }
-
-        
-
-        private static readonly HttpClient httpClient = new HttpClient
-        {
-            BaseAddress = new Uri("http://ip-api.com/json/")
-        };
-
-        private static readonly JsonSerializerOptions jsonSerializerOptions
-            = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-            };
 
     }
 }
