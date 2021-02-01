@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace IpTrackit.BLL
@@ -17,9 +18,9 @@ namespace IpTrackit.BLL
             BaseAddress = new Uri("http://ip-api.com/json/")
         };
 
-        private static async Task<IpInfo> GetInfosAsync(string query)
+        private static  Task<IpInfo> GetInfosAsync(string query)
         {
-            return await httpClient.GetFromJsonAsync<IpInfo>(query);
+            return httpClient.GetFromJsonAsync<IpInfo>(query);
         }
 
         public IpInfo GetByIp(string ip)
