@@ -117,14 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ipLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ipLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ipLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 15.75pt, style=Bold</value>
+  </data>
   <data name="ipLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 42</value>
+    <value>0, 0</value>
   </data>
   <data name="ipLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
+    <value>210, 27</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ipLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -143,11 +153,17 @@
   <data name="&gt;&gt;ipLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="searchButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="searchButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 11.25pt, style=Bold</value>
+  </data>
   <data name="searchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 106</value>
+    <value>5, 77</value>
   </data>
   <data name="searchButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>110, 36</value>
   </data>
   <data name="searchButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -167,17 +183,23 @@
   <data name="&gt;&gt;searchButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="resultRichTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 12pt, style=Bold</value>
+  </data>
   <data name="resultRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 39</value>
+    <value>237, 27</value>
+  </data>
+  <data name="resultRichTextBox.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="resultRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 377</value>
+    <value>328, 223</value>
   </data>
   <data name="resultRichTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="resultRichTextBox.Text" xml:space="preserve">
-    <value />
+    <value>Les Infos s'afficheront dans cette fenêtre</value>
   </data>
   <data name="&gt;&gt;resultRichTextBox.Name" xml:space="preserve">
     <value>resultRichTextBox</value>
@@ -191,11 +213,14 @@
   <data name="&gt;&gt;resultRichTextBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="ipMaskedTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Trebuchet MS, 11.25pt</value>
+  </data>
   <data name="ipMaskedTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 68</value>
+    <value>5, 46</value>
   </data>
   <data name="ipMaskedTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>191, 25</value>
   </data>
   <data name="ipMaskedTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -218,11 +243,14 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>668, 450</value>
+    <value>577, 322</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>IP TrackIt</value>

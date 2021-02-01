@@ -47,9 +47,23 @@ namespace IpTrackit.GUI
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            resultRichTextBox.Text = "Go\n";
             var infos = manager.GetIpInfo(ipMaskedTextBox.Text);
-            resultRichTextBox.Text += "Ville: " + infos.City;
+            var infosText = "RESULTATS"
+                          + "\nAdresse IP: " + infos.Query
+                          + "\nPays: " + infos.Country
+                          + "\nRegion: " + infos.RegionName
+                          + "\nVille: " + infos.City
+                          + "\nCode postal: " + infos.Zip
+                          + "\nFournisseur d'accès: " + infos.Isp
+                          + "\nSociété: " + infos.Org
+                          + "\nNuméro AS: " + infos.As;
+            resultRichTextBox.Text = infosText;
         }
+
+        private void ipMaskedTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
     }
 }

@@ -41,19 +41,25 @@ namespace IpTrackit.GUI
             // ipLabel
             // 
             resources.ApplyResources(this.ipLabel, "ipLabel");
+            this.ipLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ipLabel.ForeColor = System.Drawing.Color.SkyBlue;
             this.ipLabel.Name = "ipLabel";
             this.ipLabel.Click += new System.EventHandler(this.ipLabel_Click);
             // 
             // searchButton
             // 
+            this.searchButton.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.searchButton, "searchButton");
+            this.searchButton.ForeColor = System.Drawing.Color.SkyBlue;
             this.searchButton.Name = "searchButton";
-            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // resultRichTextBox
             // 
+            this.resultRichTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.resultRichTextBox, "resultRichTextBox");
+            this.resultRichTextBox.ForeColor = System.Drawing.Color.SkyBlue;
             this.resultRichTextBox.Name = "resultRichTextBox";
             this.resultRichTextBox.ReadOnly = true;
             this.resultRichTextBox.TextChanged += new System.EventHandler(this.resultRichTextBox_TextChanged);
@@ -61,16 +67,21 @@ namespace IpTrackit.GUI
             // ipMaskedTextBox
             // 
             resources.ApplyResources(this.ipMaskedTextBox, "ipMaskedTextBox");
+            this.ipMaskedTextBox.ForeColor = System.Drawing.Color.SkyBlue;
             this.ipMaskedTextBox.Name = "ipMaskedTextBox";
+            this.ipMaskedTextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.ipMaskedTextBox_MaskInputRejected);
             // 
             // MainForm
             // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.BackgroundImage = global::IpTrackit.Properties.Resources.dark_abstract;
             this.Controls.Add(this.ipMaskedTextBox);
             this.Controls.Add(this.resultRichTextBox);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.ipLabel);
+            this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.Name = "MainForm";
             this.ResumeLayout(false);
             this.PerformLayout();
