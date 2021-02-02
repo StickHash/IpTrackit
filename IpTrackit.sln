@@ -7,14 +7,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IpTrackit", "IpTrackit\IpTr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Beta|Any CPU = Beta|Any CPU
+		Beta|x64 = Beta|x64
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Beta|Any CPU.ActiveCfg = Beta|Any CPU
+		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Beta|Any CPU.Build.0 = Beta|Any CPU
+		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Beta|x64.ActiveCfg = Beta|x64
+		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Beta|x64.Build.0 = Beta|x64
 		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Debug|x64.ActiveCfg = Debug|x64
+		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Debug|x64.Build.0 = Debug|x64
 		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Release|x64.ActiveCfg = Release|x64
+		{17D0BF29-2CB3-4672-911E-B068CF672AD7}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
