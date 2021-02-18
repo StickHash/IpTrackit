@@ -1,4 +1,6 @@
-﻿using IpTrackit.BO;
+﻿
+using IpTrackit.BO;
+using LiteDB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,14 +27,25 @@ namespace IpTrackit.BLL
 
         public IpInfo GetByIp(string ip)
         {
-            try
+            using (var db = new LiteDatabase(@"C:\Temp\Data.db"))
             {
-                return GetInfosAsync(ip).Result;
-            }
-            catch (Exception)
-            {
+                try
+                {
+                    var col = db.GetCollection<IpInfo>("ipInfos");
+                    var ipInfo = col.FindOne(x => x.Query == ip);
+                    if(ipInfo == null)
+                    {
+                        ipInfo = GetInfosAsync(ip).Result;
+                        col.Insert(ipInfo);
+                    }
 
-                throw new Exception();
+                    return ipInfo;
+                }
+                catch (Exception)
+                {
+
+                    throw new Exception();
+                }
             }
         }
 

@@ -20,7 +20,6 @@ namespace IpTrackit
         {
             Program mainForm = new Program();
             mainForm.Start();
-
         }
 
         private readonly MainForm m_mainForm;

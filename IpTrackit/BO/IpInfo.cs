@@ -8,6 +8,7 @@ namespace IpTrackit.BO
 {
     public class IpInfo
     {
+        public int Id { get; set; }
         public string Query { get; set; }
         public string Country { get; set; }
         public string RegionName { get; set; }
